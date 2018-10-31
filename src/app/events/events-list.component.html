@@ -1,0 +1,9 @@
+<div>
+    <h2>Upcoming Angular Events</h2>
+    <hr/>
+    <div class="row">
+        <div class="col-md-5" *ngFor="let eventData of eventsData"> 
+                <event [eventInput]=eventData (whenClick)="HandleInParent($event)"></event>
+        </div>
+    </div> 
+</div>
